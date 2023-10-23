@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['b3c2a97eba7b4cedb2116f0cec0a8fd0.vfs.cloud9.eu-west-1.amazonaw
 
 INSTALLED_APPS = [
     'spence.apps.SpenceConfig',
+    'users.apps.UsersConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -119,3 +120,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+#when a log in operation is successful a user gets redirected to the root route
+LOGIN_REDIRECT_URL = '/' 
